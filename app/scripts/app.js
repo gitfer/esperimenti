@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+     "kendo.directives"
   ])
   .config(function ($routeProvider) {
     $routeProvider

@@ -1,2 +1,17 @@
-
-<div>Content</div>
+<div>
+    Content</div>
+<div ng-controller="formController">
+    <acme-form>
+        <acme-textbox></acme-textbox>
+        <acme-combo name="comboStati" combo-data-source="comboDataSource"></acme-combo>
+        <acme-combo name="comboProvince" combo-data-source="comboDataSource"></acme-combo>
+    </acme-form>
+    <select kendo-combo-box style="width: 300px;">
+        <option>Albania</option>
+        <option>Andorra</option>
+        <option>Armenia</option>
+        <option>Austria</option>
+        <option>Germany</option>
+        <option>Italy</option>
+    </select>
+</div>
