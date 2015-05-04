@@ -20,4 +20,7 @@ angular.module('esperimentiApp')
 	  		return model;
   		}
   	}];
+  	$scope.comboProvinceFn = function () {
+  		console.log('combo prov fn in ctrl');
+  	}
   });

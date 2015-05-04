@@ -3,15 +3,16 @@
 <div ng-controller="formController">
     <acme-form>
         <acme-textbox></acme-textbox>
-        <acme-combo name="comboStati" combo-data-source="comboDataSource"></acme-combo>
-        <acme-combo name="comboProvince" combo-data-source="comboDataSource"></acme-combo>
+        <acme-combo name="comboStati" combo-data-source="comboDataSource" label="Elenco Stati" depends-on="comboProvince"></acme-combo>
+        <acme-combo name="comboProvince" combo-data-source="comboDataSource" label="Province" depends-on="comboStati" depends-on-fn="comboProvinceFn"></acme-combo>
     </acme-form>
-    <select kendo-combo-box style="width: 300px;">
+
+    <!-- <select kendo-combo-box style="width: 300px;">
         <option>Albania</option>
         <option>Andorra</option>
         <option>Armenia</option>
         <option>Austria</option>
         <option>Germany</option>
         <option>Italy</option>
-    </select>
+    </select> -->
 </div>
